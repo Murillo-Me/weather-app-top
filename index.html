@@ -4,10 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Weather App</title>
 </head>
 <body>
-    <p>Weather Info: </p>
+    
+    <main>
+        <div class="center-panel">
+            <div class="clock">
+                <span class="current-day">Monday, september 17th, 2021</span>
+                <span class="current-time">13:06</span>
+            </div>
+            <div class="weather-days-container">
+                <button class="previous-days-btn">See previous days</button>
+                <!-- <div class="weather-card yesterday-card">
+                </div> -->
+                <div class="weather-card">
+                    <div class="temperature-info">
+                        <div class="current-temp">26ºC</div>
+                        <div class="min-max-temp-container">
+                            <span class="min-temp">17ºC</span>
+                            <span class="max-temp">30ºC</span>
+                        </div>
+                    </div>
+                    <div class="additional-info-container">
+                        <span class="current-humidity">50%</span>
+                        <span class="current-feelslike-temp">27ºC</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
     <script src="main.js"></script>
 </body>
 </html>

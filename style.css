@@ -1,0 +1,161 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ------------------------------------------- */
+/* CSS START */
+/* ------------------------------------------- */
+
+:root {
+    --panel-width: 400px;
+    --card-width: 300px;
+    --card-height: 70px;
+}
+
+body {
+    min-height: 100vh;
+    background-image: linear-gradient(lightcyan, rgb(30, 143, 143));
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-panel {
+    width: var(--panel-width);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid lightcyan;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.clock {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.current-day {
+    margin-bottom: 10px;
+}
+
+.current-time {
+    margin-bottom: 10px;
+    font-size: 3rem;
+}
+
+.weather-days-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 2px dashed black;
+    width: 100%;
+    margin: 20px;
+}
+
+.weather-card {
+    width: var(--card-width);
+    height: var(--card-height);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(243, 239, 239);
+    border-radius: 20px;
+    padding-inline: 25px;
+    padding-block: 10px;
+    margin-top: 20px;
+}
+
+.temperature-info {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 40%;
+}
+
+.temperature-info > div {
+    margin-inline: 10px;
+}
+
+.current-temp {
+    font-size: 2.5rem;
+    color: rgb(97, 97, 97);
+}
+
+.min-max-temp-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.min-temp {
+    color: darkblue;
+    font-weight: bold;
+}
+
+.max-temp {
+    color: darkred;
+    font-weight: bold;
+}
+
+.additional-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
