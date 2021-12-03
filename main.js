@@ -19,7 +19,7 @@ getWeatherData('Curitiba').then(data => {
     weatherData.minTemp = kelvinToCelsius(data.main.temp_min).toFixed(1)
     weatherData.maxTemp = kelvinToCelsius(data.main.temp_max).toFixed(1)
 
-    currentTempElement.innerText = weatherData.currentTemp + 'ºC'
+    currentTempElement.innerHTML = "<i class='fas fa-thermometer-half'></i>" + weatherData.currentTemp + 'ºC'
     minTempElement.innerText = weatherData.minTemp + 'ºC'
     maxTempElement.innerText = weatherData.maxTemp + 'ºC'
 })
