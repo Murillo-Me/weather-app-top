@@ -84,11 +84,18 @@ main {
     justify-content: center;
 }
 
+.city-container input {
+    padding-block: 0.4rem;
+    font-size: 1.2rem;
+    width: 30ch;
+}
+
 .city-title {
     font-size: 2rem;
     font-weight: bold;
     display: inline-flex;
-  align-items: center;
+    align-items: center;
+    cursor: pointer;
 }
 
 .city-title i {
