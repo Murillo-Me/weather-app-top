@@ -46,14 +46,14 @@ function kelvinToCelsius(kelvinTemp) {
 }
 
 async function getCurrentWeatherData(cityName) {
-    let response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${weather_api_key}`, {mode: 'cors'})
+    let response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${weather_api_key}`, {mode: 'cors'})
     let data = await response.json()
 
     return data
 }
 
 async function getForecastWeatherData(cityName) {
-    let response = await fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=${weather_api_key}`, {mode: 'cors'})
+    let response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=${weather_api_key}`, {mode: 'cors'})
     let data = await response.json()
 
     return data
