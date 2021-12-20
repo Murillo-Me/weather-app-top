@@ -97,11 +97,14 @@ getCurrentWeatherData(city).then(data => {
     minTempElement.innerText = currentWeatherData.minTemp + 'ºC'
     maxTempElement.innerText = currentWeatherData.maxTemp + 'ºC'
     humidityElement.innerHTML = "<i class='fas fa-tint'></i> " + currentWeatherData.humidity + "%"
+}).catch(() => {
+    alert('This is not a valid city! Please try again.')
+    window.location.reload()
 })
 
-getForecastWeatherData(city).then(data => {
-    console.log(data)
-})
+// getForecastWeatherData(city).then(data => {
+//     console.log(data)
+// })
 
 }
 
